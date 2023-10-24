@@ -4,6 +4,11 @@ const app = express();
 const port = process.env.PORT ?? 3000;
 
 app.use(express.static("public"));
+
+const corsOptions = {
+  origin: "http://localhost:5173", // Reemplaza esto con la dirección correcta de tu frontend
+};
+
 app.use(cors());
 
 app.get("/news", async (req, res) => {
