@@ -4,7 +4,7 @@ const port = process.env.PORT ?? 3000;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/asd", (req, res) => {
   res.redirect("http://www.google.com");
 });
 
