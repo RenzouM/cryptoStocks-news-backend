@@ -9,7 +9,7 @@ const corsOptions = {
   origin: "http://localhost:5173", // Reemplaza esto con la dirección correcta de tu frontend
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get("/news", async (req, res) => {
   try {
