@@ -10,6 +10,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+//asd
 
 app.get("/news", async (req, res) => {
   try {
