@@ -6,7 +6,7 @@ const port = process.env.PORT ?? 3000;
 app.use(express.static("public"));
 
 const corsOptions = {
-  origin: "https://renzoum.github.io/", // Reemplaza esto con la dirección correcta de tu frontend
+  origin: "*",
 };
 
 app.use(cors(corsOptions));
